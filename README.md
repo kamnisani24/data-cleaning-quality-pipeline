@@ -23,7 +23,39 @@ Online Retail Dataset (UK-based online store transactions) from Kaggle.
 ## Tools
 Python, Pandas, Matplotlib
 
-## Key learnings
-- Missing CustomerID was the biggest data quality issue in this dataset
-- Outliers were flagged instead of deleted, since large orders can be genuine wholesale purchases
-- Cancelled orders were kept separate, as they affect sales analysis
+Issue,Count
+Duplicate rows,5268
+Missing CustomerID,135037
+Missing Description,1454
+Invalid dates,0
+Cancelled orders,9251
+Zero/negative price,1058
+Negative qty (not cancelled),474
+Quantity outliers flagged,27111
+Rows before cleaning,541909
+Rows after cleaning,534129
+
+## Key Findings & Insights
+
+- Analyzed 541,909 raw transaction records from the Online Retail dataset.
+- Identified 5,268 duplicate rows.
+- Missing CustomerID was the largest data quality issue, affecting 135,037 records.
+- Found 1,454 records with missing product descriptions.
+- Identified 9,251 cancelled orders.
+- Detected 1,058 records with zero or negative prices.
+- Found 474 records with negative quantities in non-cancelled orders.
+- Flagged 27,111 quantity outliers using the IQR method without automatically deleting them.
+- No invalid dates were found.
+- The final dataset contained 534,129 records after cleaning.
+
+## Key Learnings
+
+- Missing values can significantly affect data quality and analysis.
+- Outliers should be investigated before removal because some may represent genuine wholesale orders.
+- Cancelled transactions should be handled separately from regular sales analysis.
+- Data validation and cleaning improve the reliability of further analysis.
+
+## Limitations
+
+- Outliers were flagged for review rather than automatically removed.
+- The project focuses on data cleaning and quality validation, not predictive modelling.
