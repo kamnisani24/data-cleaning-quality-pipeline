@@ -23,17 +23,18 @@ Online Retail Dataset (UK-based online store transactions) from Kaggle.
 ## Tools
 Python, Pandas, Matplotlib
 
-Issue,Count
-Duplicate rows,5268
-Missing CustomerID,135037
-Missing Description,1454
-Invalid dates,0
-Cancelled orders,9251
-Zero/negative price,1058
-Negative qty (not cancelled),474
-Quantity outliers flagged,27111
-Rows before cleaning,541909
-Rows after cleaning,534129
+| Issue | Count |
+|---|---:|
+| Duplicate rows | 5,268 |
+| Missing CustomerID | 135,037 |
+| Missing Description | 1,454 |
+| Invalid dates | 0 |
+| Cancelled orders | 9,251 |
+| Zero/negative price | 1,058 |
+| Negative qty (not cancelled) | 474 |
+| Quantity outliers flagged | 27,111 |
+| Rows before cleaning | 541,909 |
+| Rows after cleaning | 534,129 |
 
 ## Key Findings & Insights
 
